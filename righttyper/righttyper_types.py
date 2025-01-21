@@ -149,6 +149,7 @@ class Sample:
     returns: TypeInfo = NoneTypeInfo
     is_async: bool = False
     self_type: TypeInfo | None = None
+    function_object: types.FunctionType | None = None
 
 
     def process(self) -> tuple[TypeInfo, ...]:
